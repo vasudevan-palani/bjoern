@@ -13,16 +13,16 @@ bjoern_extension = Extension(
     define_macros = [('WANT_SENDFILE', '1'),
                      ('WANT_SIGINT_HANDLING', '1')],
     extra_compile_args = ['-std=c99', '-fno-strict-aliasing', '-fcommon',
-                          '-fPIC', '-Wall', '-Wextra', '-Wno-unused-parameter',
+                          '-fPIC', '-Wall', '-Wno-unused-parameter',
                           '-Wno-missing-field-initializers', '-g']
 )
 
 setup(
-    name         = 'bjoern',
-    author       = 'Jonas Haag',
-    author_email = 'jonas@lophus.org',
+    name         = 'bjoern-pc',
+    author       = 'Vasudevan Palani',
+    author_email = 'vasudevan.palani@gmail.com',
     license      = '2-clause BSD',
-    url          = 'https://github.com/jonashaag/bjoern',
+    url          = 'https://github.com/vasudevanpalani/bjoern',
     description  = 'A screamingly fast Python 2 + 3 WSGI server written in C.',
     version      = '2.2.3',
     classifiers  = ['Development Status :: 4 - Beta',
